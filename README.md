@@ -1,16 +1,13 @@
-# Heroku Buildpack: Dart
+# Heroku Buildpack: Flutter (_WIP_)
 
-This is a Heroku buildpack for [Dart][].
-
-(Note: This buildpack requires that you use the
-[Cedar-14][cedar14] (Ubuntu 14.x-based) stack for your Heroku application.
-This is now the default stack on Heroku.)
+This is a Heroku buildpack for [Flutter for web][].
 
 ## Features
 
-* Runs Dart VM as a server in Heroku's cloud
-* Installs packages with [pub][]
-* Builds the client app with [pub build][build]
+* Builds and runs a flutter web project on [Heroku](https://heroku.com)
+* Installs the Flutter tool on the host machine
+* Builds the project
+* Hosts it with (TODO: webserver)
 
 ## Getting Started
 
@@ -20,7 +17,7 @@ This is now the default stack on Heroku.)
 account.)
 
 Create a Heroku app, and specify both this buildpack and a
-[URL that points to a compiled Dart SDK][download].
+[URL that points to a compiled Flutter SDK][download].
 
 Here is a set of commands that deploys a minimal HTTP server built with Dart
 to Heroku:
@@ -106,16 +103,9 @@ and more.
 
 ## License
 
-The MIT License - Copyright (c) 2012 Ilya Grigorik
+Original license / copyright - The MIT License - Copyright (c) 2012 Ilya Grigorik
 
-[io]: https://api.dartlang.org/docs/channels/stable/latest/dart_io.html
 [pub]: http://pub.dartlang.org
-[dart]: https://www.dartlang.org
-[build]: http://pub.dartlang.org/doc/pub-build.html
-[example]: https://github.com/igrigorik/heroku-buildpack-dart/tree/master/test-app
+[flutter for web]: https://flutter.dev/web
 [deploy]: https://devcenter.heroku.com/articles/git
 [envcompile]: https://devcenter.heroku.com/articles/labs-user-env-compile
-[buildforubuntu]: https://code.google.com/p/dart/wiki/BuildDartSDKOnUbuntu10_04
-[communitybuilds]: https://github.com/selkhateeb/heroku-vagrant-dart-build/releases
-[cedar14]: https://devcenter.heroku.com/articles/cedar-14-migration
-[download]: https://www.dartlang.org/install/archive
